@@ -5,7 +5,7 @@
 
     $result = mysqli_query($conn, "SELECT Monthname(bulan)as bulan,jumlahPendaftar,jumlahDiterima FROM penerimaan ORDER BY MONTH(bulan) DESC"); // using mysqli_query instead
     $bulan="";
-    $jumlahPendaftar="";
+    $jumlahyangmendaftar="";
     $jumlahDiterima="";
     while($res = mysqli_fetch_array($result)) {
         $bulan=$bulan."'".$res['bulan']."',";
